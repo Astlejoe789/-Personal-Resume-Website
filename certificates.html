@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astle Joe | Certificates</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    header {
+      background: #2e2e2e;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    .certificate-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1rem;
+    }
+
+    .certificate-card {
+      background-color: #292929;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      width: 300px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .certificate-card:hover {
+      transform: scale(1.02);
+    }
+
+    .certificate-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      padding: 2rem;
+      background: #292929;
+      border-radius: 10px;
+      margin: 2rem;
+    }
+
+    footer p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #fff;
+    }
+
+    .modal:target {
+      display: flex;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .close-btn:hover {
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Astle Joe | Certificates</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="certificate-container">
+    <div class="certificate-card">
+      <a href="#zoom1"><img src="certificate1.jpeg" alt="Certificate 1"></a>
+    </div>
+    <div class="certificate-card">
+      <a href="#zoom2"><img src="certificate2.jpeg" alt="Certificate 2"></a>
+    </div>
+    <div class="certificate-card">
+        <a href="#zoom3"><img src="certificate_page-0001.jpg" alt="certificate_page-0001"></a>
+      </div>
+  </section>
+  <div id="zoom1" class="modal">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="certificate1.jpeg" alt="Certificate 1 Zoomed">
+  </div>
+
+  <div id="zoom2" class="modal">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="certificate2.jpeg" alt="Certificate 2 Zoomed">
+  </div>
+
+  <div id="zoom3" class="modal">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="certificate_page-0001.jpg" alt="certificate_page-0001 Zoomed">
+  </div>
+  <footer id="contact" class="restaurant-style">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:astlejoe789@gmail.com">astlejoe789@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Astlejoe789" target="_blank">github.com/Astlejoe789</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/astlejoe/" target="_blank">linkedin.com/in/astlejoe/</a></p>
+  </footer>
+</body>
+</html>
